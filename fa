@@ -1,3 +1,10 @@
  <h2>Web Development</h2>
       <p>In this digital world if you want to stay ahead of your competitor no doubts you need a website</p>
       <button class="btn btn-warning border-radius-10">Learn More</button>
+
+
+       <div class="w3-section">
+            <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Mumbai,India</p>
+            <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 1234567890, +919876543210</p>
+            <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+          </div>
