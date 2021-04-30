@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <title>Website</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+        @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+        /* Override UGG site */
+        #main {
+            width: 100%;
+            padding: 0;
+        }
+
+        .content-asset p {
+            margin: 0 auto;
+        }
+
+        .breadcrumb {
+            display: none;
+        }
+
+        /* Helpers */
+        /**************************/
+        .margin-top-10 {
+            padding-top: 10px;
+        }
+
+        .margin-bot-10 {
+            padding-bottom: 10px;
+        }
+
+        /* Typography */
+        /**************************/
+        #parallax-world-of-ugg h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: black;
+            padding: 0;
+            margin: 0;
+        }
+
+        #parallax-world-of-ugg h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 70px;
+            letter-spacing: 10px;
+            text-align: center;
+            color: #fff;
+            font-weight: 400;
+            text-transform: uppercase;
+            z-index: 10;
+            /* opacity: .9; */
+        }
+
+        #parallax-world-of-ugg h3 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 14px;
+            line-height: 0;
+            font-weight: 400;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            color: black;
+        }
+
+        #parallax-world-of-ugg h4 {
+            font-family: 'Oswald', sans-serif;
+            /* font-size: 70px;
+            letter-spacing: 10px; */
+            background-color: #3d3c3aa6;
+            text-align: center;
+            color: #fff;
+            font-weight: 400;
+            text-transform: uppercase;
+            z-index: 10;
+            opacity: .9;
+        }
+
+        #parallax-world-of-ugg p {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        .first-character {
+            font-weight: 400;
+            float: left;
+            font-size: 84px;
+            line-height: 64px;
+            padding-top: 4px;
+            padding-right: 8px;
+            padding-left: 3px;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        .sc {
+            color: #3b8595;
+        }
+
+        .ny {
+            color: #3d3c3a;
+        }
+
+        .atw {
+            color: #c48660;
+        }
+
+        /* Section - Title */
+        /**************************/
+        #parallax-world-of-ugg .title {
+            background: white;
+            padding: 60px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #parallax-world-of-ugg .title h1 {
+            font-size: 35px;
+            letter-spacing: 8px;
+        }
+
+        /* Section - Block */
+        /**************************/
+        #parallax-world-of-ugg .block {
+            background: white;
+            padding: 60px;
+            width: 820px;
+            margin: 0 auto;
+            text-align: justify;
+        }
+
+        #parallax-world-of-ugg .block-gray {
+            background: #f2f2f2;
+            padding: 60px;
+        }
+
+        #parallax-world-of-ugg .section-overlay-mask {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.70;
+        }
+
+        /* Section - Parallax */
+        /**************************/
+        #parallax-world-of-ugg .parallax-one {
+            padding-top: 200px;
+            padding-bottom: 200px;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            background-image: url(image/pexels-tranmautritam-251225.jpg);
+            opacity: 0.9;
+            background-attachment: fixed;
+            background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+
+        #parallax-world-of-ugg .parallax-two {
+            padding-top: 200px;
+            padding-bottom: 200px;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            background-image: url(image/domain-and-web-hosting-featured-image.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        
+
+        /* Extras */
+        /**************************/
+        #parallax-world-of-ugg .line-break {
+            border-bottom: 1px solid black;
+            width: 150px;
+            margin: 0 auto;
+        }
+
+        /* Media Queries */
+        /**************************/
+        @media screen and (max-width: 959px) and (min-width: 768px) {
+            #parallax-world-of-ugg .block {
+                padding: 40px;
+                width: 620px;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            #parallax-world-of-ugg .block {
+                padding: 30px;
+                width: 420px;
+            }
+
+            #parallax-world-of-ugg h2 {
+                font-size: 30px;
+            }
+
+            #parallax-world-of-ugg .block {
+                padding: 30px;
+            }
+
+            #parallax-world-of-ugg .parallax-one,
+            #parallax-world-of-ugg .parallax-two,
+            #parallax-world-of-ugg .parallax-three {
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
+        }
+
+        @media screen and (max-width: 479px) {
+            #parallax-world-of-ugg .block {
+                padding: 30px 15px;
+                width: 290px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
+        style="background-color: #cadefc !important; color:#798777;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/Webuilder_(1).png" style="width: 150px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="price.html">Price</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbar End -->
+
+
+
+    <div id="parallax-world-of-ugg">
+
+        
+
+        <section>
+            <div class="parallax-one">
+                <h2>WEBSITE DEVELOPMENT</h2>
+                <h4>In This digital world if you want to stay ahead of your competitors no doubt you need a website.
+                </h4>
+            </div>
+        </section>
+
+        <section>
+            <div class="block">
+                <p><span class="first-character sc">M</span>ore than half of the world population is on the internet, now it is necessary to have a website that will help your business to get more customers and brand awareness. And if you don't have a website you probably missing out on those customers who now will go to your competitors.
+
+                    We at the Customer Solution the best website development company will help you to get your site up and running. We have web-developers who are well experienced and have worked with every aspect of website development.
+                    
+                    Our website development company is willing to help you to get that rise in sales and brand awareness that you aim with your website. With us, you don't have to worry about the feature and customization of your site because our developers are very creative and will work with you at every step of this development.
+                    
+                    Now the question you will be having, what after this site is done? You don't have to worry because we will be taking care of the site even after it's done.
+                    
+                    Our focus is always to give something extra than asked.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="parallax-two">
+                <h2>DOMAIN AND HOSTING</h2>
+                <h4>Give your brand a bright future</h4>
+            </div>
+        </section>
+
+        <section>
+            <div class="block">
+                <p><span class="first-character ny">I</span>f this is your first time building a website, then you might not know what web hosting actually is. Here’s a quick breakdown.
+
+                    When you create a website, you essentially create a bunch of different files. These files need to be stored somewhere in order to be accessible on the Internet. You pay a hosting provider to “host” these files for you on one of their servers. This is the monthly fee that you’ll pay to a hosting company.
+                    
+                    Hosting companies have collections of servers also known as datacenters. Beyond the servers, there are a lot of additional elements like backup power supplies, network connection equipment, security measures, air conditioning systems, and a lot more.
+                    
+                    Best of all, when you host your files on a hosting company’s web server they’re available 24/7, so your website will always be accessible on the web
+                    
+                    Your web host is also responsible for things like server maintenance, keeping the software and hardware up to date, troubleshooting, and more. As you can see, there’s a huge operation behind getting your website online.</p>
+            </div>
+        </section>
+
+      
+
+    </div>
+
+
+
+
+
+    <!-- footer start -->
+    <div class="footer bg-dark">
+        <p class="text-center text-white mb-0 p-3">© 2021 abc solution All rights reserved.</p>
+    </div>
+    <!-- footer end -->
+
+
+    <script>
+
+    </script>
+</body>
+
+</html>
